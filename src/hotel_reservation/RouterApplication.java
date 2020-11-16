@@ -20,7 +20,7 @@ public class RouterApplication extends Application {
         final Router router = new Router(getContext());
         // Defines only two routes
         router.attach("/reservation", ReservationRessource.class);
-        router.attach("/reservation/{uid}", ReservationRessource.class);
+        // router.attach("/reservation/{uid}", ReservationRessource.class);
         return router;
     }
 
