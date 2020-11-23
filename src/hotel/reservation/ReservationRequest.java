@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2018, CGI.
  */
-package hotel_reservation;
+package hotel.reservation;
 
 /**
  * @author agilan.colbert

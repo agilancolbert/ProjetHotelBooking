@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2018, CGI.
  */
-package hotel_reservation;
+package hotel.reservation;
 
 import org.restlet.Application;
 import org.restlet.Restlet;
@@ -17,9 +17,10 @@ public class RouterApplication extends Application {
     @Override
     public synchronized Restlet createInboundRoot() {
         // Create a router Restlet that routes each call to a new respective instance of resource.
-        final Router router = new Router(getContext());
+        Router router = new Router(getContext());
         // Defines only two routes
         router.attach("/reservation", ReservationRessource.class);
+        router.attach("/filter", FilterRessource.class);
         // router.attach("/reservation/{uid}", ReservationRessource.class);
         return router;
     }
